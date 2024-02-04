@@ -8,8 +8,7 @@ using namespace std;
 
 int main()
 {
-	String str = new char[12] {"strok"};
-	str.print_String();
+	
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

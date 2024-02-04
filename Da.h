@@ -7,6 +7,7 @@ class String
 private:
 	char* strok;
 	int size;
+	static int count;
 public:
 	String() {
 		size = 80;
