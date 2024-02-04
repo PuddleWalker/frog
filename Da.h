@@ -12,10 +12,12 @@ public:
 	String() {
 		size = 80;
 		strok = new char[size];
+		count++;
 	}
 	String(int size) {
 		this->size = size;
 		strok = new char[size + 1];
+		count++;
 	}
 	String(char* strok) {
 		size = strlen(strok);
@@ -24,6 +26,7 @@ public:
 			this->strok[i] = strok[i];
 		}
 		this->strok[size] = '\0';
+		count++;
 	}
 	~String() {
 		delete[] strok;
@@ -50,5 +53,8 @@ public:
 	}
 	void print_String() {
 		std::cout << strok;
+	}
+	static int getCount() {
+		return count;
 	}
 };
